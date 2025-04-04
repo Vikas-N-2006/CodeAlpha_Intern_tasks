@@ -1,0 +1,195 @@
+:root {
+    --primary-gradient-light: linear-gradient(135deg, #8a2be2 0%, #4169e1 100%);
+    --secondary-gradient-light: linear-gradient(to right, #ff6b6b, #4ecdc4);
+    --primary-gradient-dark: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    --secondary-gradient-dark: linear-gradient(to right, #0f3460, #16213e);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--primary-gradient-light);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    transition: background 0.3s ease;
+    position: relative;
+}
+
+.dark-mode-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.dark-mode-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.dark-mode .dark-mode-btn {
+    background: rgba(31, 41, 55, 0.5);
+    color: white;
+}
+
+.reload-btn {
+    background: var(--secondary-gradient-light);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease;
+}
+
+.reload-btn:hover {
+    transform: scale(1.05);
+}
+
+body.dark-mode {
+    background: var(--primary-gradient-dark);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--primary-gradient-light);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    transition: background 0.3s ease;
+}
+
+body.dark-mode {
+    background: var(--primary-gradient-dark);
+}
+
+.age-calculator-container {
+    background: rgba(255, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.05);
+    transform: perspective(1000px);
+    transition: all 0.5s ease;
+}
+
+.dark-mode .age-calculator-container {
+    background: rgba(31, 41, 55, 0.3);
+}
+
+.date-input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.cosmic-input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid transparent;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.dark-mode .cosmic-input {
+    background: rgba(31, 41, 55, 0.3);
+    color: var(--text-dark);
+}
+
+.calculate-btn {
+    background: var(--secondary-gradient-light);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    transform: perspective(500px);
+}
+
+.dark-mode .calculate-btn {
+    background: var(--secondary-gradient-dark);
+}
+
+#result-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 25px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+.dark-mode #result-container {
+    background: rgba(31, 41, 55, 0.3);
+}
+
+#darkModeToggle {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dark-mode #darkModeToggle {
+    background: rgba(31, 41, 55, 0.5);
+}
+
+/* Additional styles remain the same */
+.ambient-light {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    opacity: 0.5;
+    pointer-events: none;
+}

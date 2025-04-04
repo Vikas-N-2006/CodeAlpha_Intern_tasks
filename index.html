@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Journey Visualizer</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="./icons8-age-100.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="dark-mode-container">
+        <button id="darkModeToggle" aria-label="Toggle Dark Mode" class="dark-mode-btn">
+            🌙
+        </button>
+    </div>
+
+    <div class="ambient-light" style="top: -100px; left: -100px;"></div>
+    <div class="ambient-light" style="bottom: -100px; right: -100px;"> </div>
+
+    <div class="age-calculator-container">
+        <h1 class="text-4xl font-bold text-center text-white mb-10 tracking-wide">
+            🌈 Life Journey Calculator
+        </h1>
+
+        <div class="date-input-group flex items-center">
+            <div class="input-wrapper flex-1 mr-2">
+                <input type="text" id="birthdate" placeholder="Select your birthdate" class="cosmic-input w-full"
+                    data-input />
+            </div>
+        </div>
+
+        <button id="calculateBtn" class="calculate-btn mt-6" onclick="disable(this)">
+            Discover Your Journey
+        </button>
+
+        <div id="result-container" class="text-white">
+            <div id="age-result" class="text-3xl font-bold mb-4"></div>
+            <div id="milestone-container" class="age-milestone"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
