@@ -42,7 +42,7 @@ Follow these steps to run the project locally:
    ```sh
    git clone https://github.com/Vikas-N-2006/CodeAlpha_task1_AgeCalculator.git
    ```
-2. Open the ```sh index.html ``` file in your browser
+2. Open the ``` index.html ``` file in your browser
 
    
 ---
@@ -52,6 +52,8 @@ Follow these steps to run the project locally:
  2. Improve mobile responsiveness
 
  3. Add animations and visual feedback
+
+ ---
 
 # 🤝 Contributions
 
@@ -70,14 +72,10 @@ git checkout -b feature/AmazingFeature
 
 ### 💾 Step 3: Commit your changes
 ```sh
-Copy
-Edit
 git commit -m "Add AmazingFeature"
 ```
 ### 🚀 Step 4: Push to the branch
 ```sh
-Copy
-Edit
 git push origin feature/AmazingFeature
 ```
 ### 🔁 Step 5: Open a Pull Request
