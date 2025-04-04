@@ -75,5 +75,5 @@ Go to the repository on GitHub and click New Pull Request to submit your changes
 
 # 📬 Contact
 Vikas N
- - 🔗 GitHub Profile
- - 📁 Project Repository
+ - 🔗 [GitHub Profile](https://github.com/Vikas-N-2006)
+ - 📁 [Project Repository](https://github.com/Vikas-N-2006/CodeAlpha_task1_AgeCalculator)
