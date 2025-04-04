@@ -42,16 +42,7 @@ Follow these steps to run the project locally:
    ```sh
    git clone https://github.com/Vikas-N-2006/CodeAlpha_task1_AgeCalculator.git
    ```
-2. Open the ``` index.html ``` file in your browser
-
-   
----
-### 📌 Roadmap
- 1. Add age comparison feature
-
- 2. Improve mobile responsiveness
-
- 3. Add animations and visual feedback
+2. Open the ``` index.html ``` file in your browser.
 
  ---
 
